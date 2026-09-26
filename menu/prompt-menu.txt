@@ -1,0 +1,394 @@
+Improve my existing navigation menu and transform it into a **modern, elegant, professional, premium, and fully responsive navigation bar**.
+
+The final result should look like a navigation system from a **high-quality modern website, SaaS platform, agency, startup, or professional portfolio** — not like a generic template.
+
+## Main Requirements
+
+* Use **HTML + CSS** as the main technologies.
+* Use **JavaScript only when absolutely necessary**, and use the absolute minimum possible.
+* Prefer CSS-only solutions whenever reasonably possible.
+* Do not use React, Vue, Angular, Tailwind, Bootstrap, or other frameworks.
+* You may use lightweight external libraries through **CDN** when they genuinely improve the interface.
+* Follow **Clean Code** principles.
+* Keep the implementation lightweight, organized, readable, maintainable, and easy to customize.
+* Do not over-engineer the navigation.
+
+## Modern Visual Design
+
+Create a **modern, clean, elegant, premium, and professional design**.
+
+The navigation should have:
+
+* Excellent spacing.
+* Clear visual hierarchy.
+* Modern typography.
+* Balanced proportions.
+* Smooth transitions.
+* Elegant hover effects.
+* Clear active states.
+* Subtle borders.
+* Subtle shadows when appropriate.
+* Modern border radius.
+* Professional buttons.
+* Excellent alignment.
+* A cohesive visual identity.
+
+Avoid making the design look generic, outdated, excessive, or overloaded with effects.
+
+Do not use excessive gradients, neon colors, excessive glow, or unnecessary animations.
+
+The design should feel **professional and sophisticated**.
+
+## Color Palette
+
+Choose a **beautiful, modern, professional, and harmonious color palette**.
+
+Do not use random colors.
+
+Use CSS custom properties for the entire visual system.
+
+Create a clearly organized `:root` section with variables written in **Portuguese**.
+
+Example:
+
+```css
+:root {
+    /* Cores */
+    --cor-primaria: #...;
+    --cor-secundaria: #...;
+    --cor-destaque: #...;
+    --cor-fundo: #...;
+    --cor-fundo-menu: #...;
+    --cor-texto: #...;
+    --cor-texto-suave: #...;
+    --cor-borda: #...;
+
+    /* Layout */
+    --largura-maxima: ...;
+    --altura-menu: ...;
+
+    /* Interface */
+    --raio-borda: ...;
+    --sombra-menu: ...;
+    --transicao: ...;
+}
+```
+
+**All CSS variable names must be written in Portuguese.**
+
+Make the variables intuitive and easy for a Brazilian beginner to understand and modify.
+
+Use short comments only where they are useful.
+
+For example:
+
+```css
+/* Cor principal do site */
+--cor-primaria: #...;
+
+/* Cor usada nos botões de destaque */
+--cor-destaque: #...;
+```
+
+Do not write huge comments.
+
+## Icons
+
+Use **modern icons in navigation items and buttons whenever appropriate**.
+
+You may use a lightweight icon library through CDN, such as:
+
+* Lucide Icons.
+* Bootstrap Icons.
+* Font Awesome.
+
+Prefer **Lucide Icons** or another lightweight modern icon library when appropriate.
+
+Icons should be:
+
+* Consistent.
+* Simple.
+* Modern.
+* Properly aligned with the text.
+* Sized proportionally.
+* Accessible.
+* Used with good spacing.
+
+Examples:
+
+* Home → home icon.
+* About → user/info icon.
+* Services → layers/grid icon.
+* Projects → folder/briefcase icon.
+* Contact → mail/message icon.
+* Login → log-in icon.
+* Menu → menu icon.
+* Close → X icon.
+* External links → external-link icon.
+* Phone → phone icon.
+
+Do not add icons everywhere just for decoration.
+
+Use icons when they improve **recognition, usability, or visual hierarchy**.
+
+## CTA / Important Buttons
+
+Pay special attention to navigation items that represent **important actions**.
+
+Examples:
+
+* "Contato"
+* "Fale Conosco"
+* "Seja Cliente"
+* "Começar"
+* "Comece Agora"
+* "Contrate"
+* "Solicitar Orçamento"
+* "Fale Comigo"
+* "Entrar"
+* "Cadastrar"
+
+These elements must be visually differentiated from normal navigation links.
+
+For example:
+
+* Distinct background color.
+* Stronger visual hierarchy.
+* Appropriate padding.
+* Icon.
+* Subtle shadow.
+* Elegant hover animation.
+* Clear focus state.
+
+Do **not** make every navigation item look like a button.
+
+Normal navigation links should remain clean and subtle.
+
+Important actions should naturally attract more attention.
+
+## Typography
+
+Use a modern professional web font through **Google Fonts CDN**.
+
+Choose an appropriate modern font and use it consistently throughout the navigation.
+
+The typography should have:
+
+* Good readability.
+* Proper font weights.
+* Appropriate letter spacing.
+* Clear hierarchy.
+* Responsive sizing.
+
+## Responsive Design
+
+The navigation must work perfectly on:
+
+* Desktop.
+* Laptop.
+* Tablet.
+* Mobile.
+
+The mobile version must be properly designed instead of simply shrinking the desktop navigation.
+
+Create a clean mobile navigation experience with:
+
+* Hamburger button.
+* Clear open/close states.
+* Smooth transition.
+* Proper spacing.
+* Touch-friendly buttons.
+* Accessible interaction.
+
+Use **HTML + CSS whenever possible**.
+
+Only use JavaScript if the interaction genuinely cannot be implemented properly with HTML/CSS.
+
+If JavaScript is necessary, keep it extremely small and simple.
+
+## Animations
+
+Use subtle, modern animations.
+
+Possible interactions:
+
+* Link hover.
+* Active indicator.
+* Icon transitions.
+* Button hover.
+* Mobile menu opening.
+* Mobile menu closing.
+* Menu icon animation.
+* CTA hover effects.
+
+Animations must be:
+
+* Smooth.
+* Fast.
+* Subtle.
+* Professional.
+
+Avoid excessive animations.
+
+Also consider:
+
+```css
+@media (prefers-reduced-motion: reduce) {
+    ...
+}
+```
+
+when appropriate.
+
+## Accessibility
+
+Follow good accessibility practices.
+
+Use:
+
+* Semantic HTML.
+* Proper `<nav>`.
+* Accessible buttons.
+* `aria-label` when necessary.
+* Keyboard navigation.
+* Visible focus states.
+* Good color contrast.
+* Proper hover/focus states.
+* Touch-friendly interaction.
+
+Icons must not be the only way to understand an important action.
+
+## Clean Code
+
+Follow Clean Code principles throughout the project.
+
+* Use meaningful class names.
+* Avoid duplicated code.
+* Avoid unnecessary JavaScript.
+* Avoid unnecessary dependencies.
+* Keep HTML semantic.
+* Keep CSS organized.
+* Keep JavaScript minimal.
+* Separate responsibilities.
+* Use reusable CSS variables.
+* Avoid excessive nesting.
+* Avoid unnecessary complexity.
+* Do not create files unless they are actually necessary.
+
+## CSS Organization
+
+Organize the CSS in a logical order, for example:
+
+1. Font/imports.
+2. CSS variables.
+3. Reset/base styles.
+4. Navigation container.
+5. Logo/brand.
+6. Navigation links.
+7. Icons.
+8. CTA buttons.
+9. Mobile menu.
+10. Responsive breakpoints.
+11. Animations.
+12. Accessibility/reduced motion.
+
+Keep the structure easy to understand.
+
+## Existing Project
+
+Before changing anything, analyze my existing HTML, CSS, and JavaScript.
+
+Improve the current implementation instead of unnecessarily rebuilding everything.
+
+Preserve:
+
+* Existing functionality.
+* Existing navigation items.
+* Existing links.
+* Existing project identity.
+* Existing content.
+
+Only change things when necessary to improve the design, responsiveness, accessibility, or code quality.
+
+Do not convert the project to React, Vue, Angular, Tailwind, Bootstrap, or another framework.
+
+## IMPORTANT — CODE I PROVIDE
+
+If I provide existing **HTML, CSS, JavaScript, or project files/code**, you must:
+
+* Analyze the code I provided.
+* Modify the existing implementation.
+* Return the **complete updated code**.
+* Do not return only the changed parts.
+* Do not return only snippets.
+* Do not tell me to manually merge the changes.
+* Make the result ready to **copy and paste directly into my project**.
+* Return each relevant file in a normal Markdown code block with the correct language identifier, such as `html`, `css`, or `javascript`.
+* Clearly identify the filename immediately before each code block.
+* Preserve existing functionality unless there is a good reason to change it.
+* Do not omit any existing code that is still necessary.
+
+For example:
+
+**index.html**
+
+```html
+<!-- complete updated HTML -->
+```
+
+**style.css**
+
+```css
+/* complete updated CSS */
+```
+
+**script.js**
+
+```javascript
+// complete updated JavaScript
+```
+
+The code blocks must contain the **actual complete code**, not placeholders such as `/* existing code */`, `...`, or `// rest of the code`.
+
+### If I DO NOT provide existing code
+
+If I do not provide any existing code, simply ignore the previous section and proceed normally.
+
+Do not ask me to provide code unless it is actually necessary to complete the task.
+
+## Final Response
+
+The final response must be written **entirely in Portuguese**.
+
+Clearly explain:
+
+1. Which files were modified.
+2. Whether I need to create any new files.
+3. If I need to create a new file, provide the complete code.
+4. Provide the complete updated HTML.
+5. Provide the complete updated CSS.
+6. Provide the complete JavaScript only if it is actually necessary.
+7. Provide the CDN imports required for fonts or icon libraries.
+8. Explain exactly where each CDN import should be placed.
+9. Explain briefly what was improved.
+10. Explain where I can change the colors, fonts, spacing, sizes, border radius, shadows, and other visual properties.
+11. If JavaScript is not necessary, explicitly state that.
+12. If no new files are necessary, explicitly state that.
+
+The final implementation must be **complete, functional, and ready to copy and use**.
+
+Do not provide incomplete code, pseudo-code, placeholders, or only examples.
+
+### Final Quality Standard
+
+The final result must be:
+
+**Modern + Premium + Professional + Responsive + Accessible + Lightweight + Clean Code + Easy to Customize.**
+
+Use **icons intelligently**, differentiate **CTA/action buttons**, use a **professional color palette**, use **Portuguese CSS variable names**, use a **modern web font**, and keep JavaScript to the absolute minimum.
+
+If I provide code, **always return the complete updated code in normal copy-and-paste-ready code blocks**.
+
+If I do not provide code, simply ignore that requirement.
+
+The final result must be **production-ready and easy for a beginner to customize**.
